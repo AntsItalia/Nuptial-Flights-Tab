@@ -6,30 +6,46 @@
     <!--1702x967-->
 
     <style>
+      /* Default: Smarphone */
       html {height: 100%;} 
-      body {position: relative;text-align: center;width: 100%;height: 75%;padding: 0px;margin: 0px;overflow: hidden;font-family: arial;font-size: 10px;color: #ffffff;background-color: #2b2b2b;} 
+      body {position: relative;text-align: center;width: 100%;height: 75%;padding: 0px;margin: 0px;overflow: scroll;font-family: arial;font-size: 10px;color: #ffffff;background-color: #2b2b2b;} 
       .preview-frame {width: 90%;height: 65%;background-color: #fff;display: inline-block;border-radius: 10px;}
-      img {height:200px; width:200px}
+      img {height:160px; width:160px}
       h1 h2 h3 h4{text-align: center;}
-      .legenda { display: block;}
+      .legenda { display: inline-block; font-size: small;}
+      .adding { display: block; font-size: small;}
       .center {display: block;margin-left: auto;margin-right: auto;width: 50%;text-align: center;}
 
-      /**
-      @media (min-width:320px)  { //smartphones, iPhone, portrait 480x320 phones }
-      @media (min-width:481px)  { //portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. }
-      @media (min-width:641px)  { //portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones }
-      @media (min-width:961px)  { //tablet, landscape iPad, lo-res laptops ands desktops }
-      **/
+      @media only screen and (min-width: 1366px) 
+      {
+        .preview-frame {width: 95%;height: 73%;background-color: #fff;display: inline-block;border-radius: 10px; overflow:scroll;}
+        img {height:160px; width:160px}
+        h1{text-align: center;}
+        .legenda {float: center;font-size: 15px;}
+        .adding {float: center;font-size: 15px;}
+        div {width: 95%;height: 100%; display: inline-block;margin-left: auto;margin-right: auto; }
+      }      
+
+      /*
       @media (min-width:1025px) 
-      { /* big landscape tablets, laptops, and desktops */ 
-        .preview-frame {width: 1545px;height: 80%;background-color: #fff;display: inline-block;border-radius: 10px;}
+      { /* big landscape tablets, laptops, and desktops  
+        .preview-frame {width: 1702px;height: 80%;background-color: #fff;display: inline-block;border-radius: 10px; overflow-x: scroll;}
         img {height:200px; width:200px}
         h1{text-align: center;}
         .legenda {float: left;font-size: 15px;}
         .adding {float: right;font-size: 15px;}
-        div {width: 1545px;height: 100%; display: inline-block;margin-left: auto;margin-right: auto; }
+        div {width: 1702px;height: 100%; display: inline-block;margin-left: auto;margin-right: auto; }
       }
-      /**@media (min-width:1281px) { //hi-res laptops and desktops }**/     
+      
+      @media (min-width:1281px) 
+      { /* hi-res laptops and desktops
+        .preview-frame {width: 1702px;height: 80%;background-color: #fff;display: inline-block;border-radius: 10px;}
+        img {height:200px; width:200px}
+        h1{text-align: center;}
+        .legenda {float: left;font-size: 15px;}
+        .adding {float: right;font-size: 15px;}
+        div {width: 1545px;height: 100%; display: inline-block;margin-left: auto;margin-right: auto; } 
+      } */     
       
     </style>
     
@@ -64,18 +80,21 @@
       <a href="https://www.antsitalia.com/"style="text-align: center">
         <img src="https://antsitalia.com/wp-content/uploads/2022/01/94269901_2669863273246003_7746240106956062720_n.png">
       </a>  
-    <h1 style="font-size: xx-large; font-family: Raleway;"  >Tabella Sciamature</h1>
-    <br>
+    <h1 style="font-size: x-large; font-family: Raleway;"  >Tabella Sciamature</h1>
     <span class="legenda">Legenda: (N) Nord; (C) Centro; (S) Sud; (Si) Sicilia; (Sa) Sardegna</span>
-    <span class="adding"><a href="mailto:info.antsitalia@gmail.com?subject=TABELLA SCIAMATURE - AGGIUNTA SPECIE">Segnalare una specie mancante</a></span>
     <br>
     <br>
     <br>
     </section>
     <div class="row">
       <div class="col-md-12 col-xs-12 col-sm-12 text-center">
-        <iframe class="preview-frame" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT3D9tMxM85FyoFn8DjuZy9uTamD3h1cYilXtGyBj6EX5POb9ZXn9TiESnpgp9eq3x64EkcBN4nXbv3/pubhtml?gid=0&range=a1:h&single=true&widget=false&headers=false&chrome=false" name="preview-frame" frameborder="0" noresize="noresize">
+        <iframe class="preview-frame" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT3D9tMxM85FyoFn8DjuZy9uTamD3h1cYilXtGyBj6EX5POb9ZXn9TiESnpgp9eq3x64EkcBN4nXbv3/pubhtml?gid=0&single=true&widget=false&headers=false&chrome=false" name="preview-frame" frameborder="0" noresize="noresize">
         </iframe>
+        <br>
+        <br>
+        <button type="button" onclick="alert('Hello world!')">Segnalare una specie mancante</button>
+        
+        <!--<div class="adding"><a href="mailto:info.antsitalia@gmail.com?subject=TABELLA SCIAMATURE - AGGIUNTA SPECIE"></a></div> -->
       </div>
     </div>
   </body>
