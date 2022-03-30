@@ -2,7 +2,7 @@
 
 ## A Bunch of Stuff
 
-This repository is a collection of all my sigle projects for the [YouTube channel Ants Italia](https://www.youtube.com/antsitalia) and for it's [domain](https://www.antsitalia.com/), services and it's [community of user].
+This repository is a collection of all my sigle projects for the [YouTube channel Ants Italia](https://www.youtube.com/antsitalia) and for it's [domain](https://www.antsitalia.com/), services and it's [community of user](https://www.facebook.com/groups/antsitalia).
 
 
 <img src="./imgs/pc_ant.jpg" height="206" width="245" style="border-radius:50%">
