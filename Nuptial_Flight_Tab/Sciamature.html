@@ -2,52 +2,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    
-    <!--1702x967-->
 
-    <style>
-      /* Default: Smarphone */
-      html {height: 100%;} 
-      body {position: relative;text-align: center;width: 100%;height: 75%;padding: 0px;margin: 0px;overflow: scroll;font-family: arial;font-size: 10px;color: #ffffff;background-color: #2b2b2b;} 
-      .preview-frame {width: 90%;height: 65%;background-color: #fff;display: inline-block;border-radius: 10px;}
-      img {height:160px; width:160px}
-      h1 h2 h3 h4{text-align: center;}
-      .legenda { display: inline-block; font-size: small;}
-      .adding { display: block; font-size: small;}
-      .center {display: block;margin-left: auto;margin-right: auto;width: 50%;text-align: center;}
-
-      @media only screen and (min-width: 1366px) 
-      {
-        .preview-frame {width: 95%;height: 73%;background-color: #fff;display: inline-block;border-radius: 10px; overflow:scroll;}
-        img {height:160px; width:160px}
-        h1{text-align: center;}
-        .legenda {float: center;font-size: 15px;}
-        .adding {float: center;font-size: 15px;}
-        div {width: 95%;height: 100%; display: inline-block;margin-left: auto;margin-right: auto; }
-      }      
-
-      /*
-      @media (min-width:1025px) 
-      { /* big landscape tablets, laptops, and desktops  
-        .preview-frame {width: 1702px;height: 80%;background-color: #fff;display: inline-block;border-radius: 10px; overflow-x: scroll;}
-        img {height:200px; width:200px}
-        h1{text-align: center;}
-        .legenda {float: left;font-size: 15px;}
-        .adding {float: right;font-size: 15px;}
-        div {width: 1702px;height: 100%; display: inline-block;margin-left: auto;margin-right: auto; }
-      }
-      
-      @media (min-width:1281px) 
-      { /* hi-res laptops and desktops
-        .preview-frame {width: 1702px;height: 80%;background-color: #fff;display: inline-block;border-radius: 10px;}
-        img {height:200px; width:200px}
-        h1{text-align: center;}
-        .legenda {float: left;font-size: 15px;}
-        .adding {float: right;font-size: 15px;}
-        div {width: 1545px;height: 100%; display: inline-block;margin-left: auto;margin-right: auto; } 
-      } */     
-      
-    </style>
+    <link rel="stylesheet" href="./sciamature.css">
+    <!--1702x967-->    
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
@@ -92,9 +49,11 @@
         </iframe>
         <br>
         <br>
-        <button type="button" onclick="alert('Hello world!')">Segnalare una specie mancante</button>
+        <form action="mailto:info.antsitalia@gmail.com?subject=TABELLA SCIAMATURE - AGGIUNTA SPECIE" method="GET">
+          <input type="submit" value="Segnalare una specie mancante" />
+        </form>
         
-        <!--<div class="adding"><a href="mailto:info.antsitalia@gmail.com?subject=TABELLA SCIAMATURE - AGGIUNTA SPECIE"></a></div> -->
+        <!--<div class="adding"></div> -->
       </div>
     </div>
   </body>
