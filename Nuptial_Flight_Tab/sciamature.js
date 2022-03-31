@@ -16,12 +16,7 @@ $(document).ready(function()
 
 $(window).resize(function() { calcHeight(); } ).load(function() { calcHeight(); });
 
-$('.questionnaire').on('submit', function(e) {
-
-    var messageBody = '';
-    $.each($('.questionnaire').serializeArray(), function(i, field) {
-      messageBody += field.name + ": " + field.value + '%0D%0A';
-    });
+$('.questionnaire').on('submit', function(e) {    
   
     var hreflink = "mailto:info.antsitalia@gmail.com?Subject='TABELLA SCIAMATURE - AGGIUNTA SPECIE'";
     $('.mail').attr("href", hreflink);
