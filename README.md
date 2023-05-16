@@ -10,13 +10,10 @@ This repository is a collection of all my sigle projects for the [YouTube channe
 
 ## Table of Projects
 1. [Nuptial Flight Table](#Nuptial-Flight-Table)
-2. [Magic Moderator Telegram Bot](#Magic-Moderator-Telegram-Bot)
-3. [Ants Distribution Map](#Ants-Distribution-Map)
-4. [Ants Counter WebApp](#Ants-Counter-WebApp)
+2. [Ants Distribution Map](#Ants-Distribution-Map)
+3. [Ants Counter WebApp](#Ants-Counter-WebApp)
 
 ### Nuptial Flight Table
-
-### Magic Moderator Telegram Bot
 
 ### Ants Distribution Map
 
